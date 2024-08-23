@@ -42,32 +42,70 @@ header{
     flex-shrink: 1;
     flex-grow: 1;
     width: 40%;
-    font-size: 1.25rem;
+    font-size: 1.3rem;
     margin: 0;
     margin-left: 0.5rem;
     margin-bottom: 2rem;
 }
-#block{
+#block {
+    width: 100vw;
+    height: max-content;
+    margin: 0;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+    position: relative;
     display: flex;
     justify-content: center;
-    align-items: center;
+}
+
+#video {
+    width: 100vw;
+    z-index: 1;
+    object-fit: cover;
+    opacity: 0.6;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+#video video{
+    width: 100vw;
+}
+#videoheading {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); 
+    width: 100%;
+    height: max-content;
+    z-index: 2; 
     text-align: center;
 }
-#head2{
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    flex-shrink: 1;
-    flex-grow: 1;
+
+#head2 {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin: 0;
+    z-index: 2;
+    color: black;
+    font-size: 2.5rem
 }
 #matter1{
     font-family: 'Times New Roman', Times, serif;
-    width: 65%;
+    width: 60%;
     margin: 1rem;
+    font-size: 1.2rem;
+    text-align: center;
+}
+#imageb1{
+    display: inline-block;
+    width: 30%;
 }
 #image1{
-    width:30%;
+    width:100%;
+    margin: 1rem;
 }
 #block1{
     display: flex;
+    width: 100%;
     text-align: right;
     justify-content: space-between;
     font-size: large;
@@ -157,7 +195,7 @@ footer{
     margin: 0;
     padding: 0;
     margin-left: 1rem;
-    font-size: 1rem;
+    font-size: 1.05rem;
 }
 #hfoot{
     margin-bottom: 3rem;;
@@ -225,10 +263,21 @@ a:active{
     #image2{
         width:60vw;
     }
+    #imageb1{
+        width: 100vw;
+        display: flex;
+        justify-content: center;
+    }
     #image1{
         width:60vw;
     }
     .list1{
         margin-left: 4vw;
+    }
+    #head2 {
+        font-size: 1.5rem;
+    }
+    #matter1{
+        width: 100vw;
     }
 }
