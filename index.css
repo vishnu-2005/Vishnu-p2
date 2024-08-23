@@ -59,14 +59,12 @@ header{
     flex-grow: 1;
 }
 #matter1{
-    flex-shrink: 1;
-    flex-grow: 1;
     font-family: 'Times New Roman', Times, serif;
+    width: 65%;
+    margin: 1rem;
 }
 #image1{
     width:30%;
-    flex-shrink: 1;
-    flex-grow: 1;
 }
 #block1{
     display: flex;
@@ -77,6 +75,7 @@ header{
     width: 97vw;
     margin: 0;
     margin-bottom:2rem;
+    flex-wrap: wrap;
 }
 .block{
     display: flex;
@@ -127,6 +126,10 @@ footer{
     position: relative;
     margin-left: 4rem;
 }
+.footlist{
+    width: 50vw;
+    display: flex;
+}
 .h4foot{
     margin-left: 1rem;
     display: inline-block;
@@ -154,6 +157,7 @@ footer{
     margin: 0;
     padding: 0;
     margin-left: 1rem;
+    font-size: 1rem;
 }
 #hfoot{
     margin-bottom: 3rem;;
@@ -219,12 +223,12 @@ a:active{
         margin: 0.5rem;
     }
     #image2{
-        width:40%;
-        margin: 0.5rem;
+        width:60vw;
     }
     #image1{
-        width:40%;
-        flex-shrink: 1;
-        flex-grow: 1;
+        width:60vw;
+    }
+    .list1{
+        margin-left: 4vw;
     }
 }
