@@ -58,43 +58,48 @@ a:active{
     border: 2px solid black;
     border-radius: 5%;
     position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     top:7%;
-    display:flex;
-    flex-wrap:wrap;
-    z-index: 1;
 }
 #innerform{
     width: 100%;
     display: flex;
     flex-direction: column;
-    height: 90%;
+    height: 95%;
     align-content: center;
+    justify-content: space-between;
 }
 .inner{
-    height: 1.2rem;
-    width: 70%;
-    flex-grow: 1;
-    flex-shrink: 1;
+    height: max-content;
+    width: 100%;
     display: flex;
     justify-content: center;
     margin: 0.2rem;
 }
 .input-field {
-    width: 70%;
+    width: 80%;
     padding: 0.4rem;
     font-size: 0.75rem;
     border-radius: 0.5rem;
     border: 0.05rem solid black;
+    padding-left: 0.5rem;
 }
 p{
     text-align: center;
     width: 100%;
 }
 button{
+    align-self: center;
     width: 35%;
     font-size: 0.75rem;
     border: 0.05rem solid black;
     border-radius: 0.5rem;
+}
+button:hover{
+    background-color: gray;
+    color: white;
 }
 footer{
     background-color: #92b4f4;
