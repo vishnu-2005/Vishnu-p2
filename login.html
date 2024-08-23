@@ -11,22 +11,24 @@
             <h1 id = "heading">Signature Verification</h1>
         </header>
         <def id = "outer">
-            <def id = "inner">
+            <div id = "inner">
+            <form action = "action.php" id = "innerform">
                 <def id = "login"><h4>Login</h4></def>
-                <def class = "inner">
-                    <input type=username placeholder="Enter your username       " class="input-field">
-                </def>
-                <def class = "inner">
-                    <input type=password placeholder="Enter your password       " class="input-field">
-                </def>
+                <label for = "user" class = "inner">
+                    <input type=username placeholder="Enter your username       " class="input-field" id = "user">
+                </label>
+                <label for = "pass" class = "inner">
+                    <input type=password placeholder="Enter your password       " class="input-field" id = "pass">
+                </label>
                 <def class = "inner">
                     <button>Login</button>
                 </def>
+            </form>
                 <p>OR</p>
                 <def id = "linked">
                     <a href = "signup.html" target="_main" id = "Register"><button>Register</button></a>
                 </def>
-            </def>
+            </div>
         </def>
         <footer>
                 <div class = "last footer"><a href = "#" class = "footer" target="_main">About Us</a></div>

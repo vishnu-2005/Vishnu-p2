@@ -69,6 +69,11 @@ a:active{
     flex-wrap:wrap;
     border-radius: 1rem;
 }
+#innerform{
+    width: 100%;
+    display:flex;
+    flex-wrap:wrap;
+}
 .inner{
     height: max-content;
     width: 90%;
@@ -103,6 +108,10 @@ button{
     font-size: 0.8rem;
     border-radius: 0.5rem;
     border: 0.05rem solid black;
+}
+button:hover{
+    background-color: gray;
+    color: white;
 }
 #Register{
     height: 0.8rem;

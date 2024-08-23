@@ -63,13 +63,21 @@ a:active{
     flex-wrap:wrap;
     z-index: 1;
 }
+#innerform{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    height: 90%;
+    align-content: center;
+}
 .inner{
-    height: max-content;
+    height: 1.2rem;
     width: 70%;
     flex-grow: 1;
     flex-shrink: 1;
     display: flex;
     justify-content: center;
+    margin: 0.2rem;
 }
 .input-field {
     width: 70%;
