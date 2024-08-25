@@ -1,28 +1,28 @@
+/* Whole page*/
 *{
     margin:0;
     padding: 0;
 }
 body{
-    background: linear-gradient(to right,rgba(255, 255, 255, 0.482),#9bd0efc5 );
+    background: linear-gradient(to right,rgba(255, 255, 255, 0.684),#74c4f2c5 );
 }
+
+/*Header*/
 header{
     background-color: #92b4f4;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
     align-items: center;
-    padding: auto;
     top :0;
     padding: 1.5rem;
 }
 #heading{
     color:#0A369D;
     display: inline-block;
-    position: relative;
-    left: 1%;
+    margin-left: 1rem;
     font-size: 2.5rem;
 }
-
 .login{
     text-decoration: none;
     color:black;
@@ -38,15 +38,9 @@ header{
     justify-content: space-around;
     position: relative;
 }
-.heading{
-    flex-shrink: 1;
-    flex-grow: 1;
-    width: 40%;
-    font-size: 1.3rem;
-    margin: 0;
-    margin-left: 0.5rem;
-    margin-bottom: 2rem;
-}
+
+/*Main body*/
+/*block1*/
 #block {
     width: 100vw;
     height: max-content;
@@ -57,7 +51,6 @@ header{
     display: flex;
     justify-content: center;
 }
-
 #video {
     width: 100vw;
     z-index: 1;
@@ -80,7 +73,6 @@ header{
     z-index: 2; 
     text-align: center;
 }
-
 #head2 {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     margin: 0;
@@ -88,21 +80,8 @@ header{
     color: black;
     font-size: 2.5rem
 }
-#matter1{
-    font-family: 'Times New Roman', Times, serif;
-    width: 60%;
-    margin: 1rem;
-    font-size: 1.2rem;
-    text-align: center;
-}
-#imageb1{
-    display: inline-block;
-    width: 30%;
-}
-#image1{
-    width:100%;
-    margin: 1rem;
-}
+
+/*block2*/
 #block1{
     display: flex;
     width: 100%;
@@ -115,6 +94,35 @@ header{
     margin-bottom:2rem;
     flex-wrap: wrap;
 }
+#imageblock1{
+    display: inline-block;
+    width: 30%;
+}
+#image1{
+    width:100%;
+    margin: 1rem;
+}
+#matter1{
+    font-family: 'Times New Roman', Times, serif;
+    width: 60%;
+    margin: 1rem;
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+/*block4 the block with only image*/
+#block4{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2rem;
+}
+#image2{
+    width:30%;
+    margin: 1rem;
+}
+
+/*common elements*/
 .block{
     display: flex;
     width: 90%;
@@ -126,16 +134,11 @@ header{
     flex-grow: 1;
     font-family: 'Times New Roman', Times, serif;   
 }
-#block4{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 2rem;
+.heading{
+    margin-left: 0.5rem;
 }
-#image2{
-    width:30%;
-    margin: 1rem;
-}
+
+/*Footer*/
 footer{
     background-color: #92b4f4;
     width: 100%;
@@ -144,18 +147,30 @@ footer{
     padding: 0;
     position: absolute;
 }
+
+/*common element*/
+.foot{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 0.5rem;
+}
+
+/*links(the first div)*/
 .footer{
     text-decoration: none;
     color: black;
-    border-right: 0.1rem solid black;
     margin-right: 0.5%;
     padding-right: 0.6%;
     margin-left: 0.5%;
 }
-#footer{
-    display: flex;
-    justify-content: flex-start;
+.links{
+    text-decoration: none;
+    color: darkblue;
 }
+
+/*lists*/
 .list1{
     font-size: 1.05rem;
     flex-shrink: 1;
@@ -172,57 +187,45 @@ footer{
     margin-left: 1rem;
     display: inline-block;
     width:10rem;
-}
-.foot{
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    flex-wrap: wrap;
-    padding: 0.5rem;
-}
-.links{
-    text-decoration: none;
-    color: darkblue;
-}
-.heading1{
     font-size: 1.2rem;
-    margin: 0.2rem;
 }
-.matterfoot{
-    position: relative;
-    bottom: 2rem;
-    width: 70%;
-    margin: 0;
-    padding: 0;
-    margin-left: 1rem;
-    font-size: 1.05rem;
-}
-#hfoot{
-    margin-bottom: 3rem;;
-}
-#final{
-    width: 40%;
-    text-align: center;
-}
-#dfinal{
-    display: flex;
-    justify-content: center;
-    margin: 0;
-}
+
+/*footer matter*/
 .last{
     padding-left: 1.2rem;
     padding-top: 1rem;
 }
+.last h4{
+    display: inline;
+    font-size: 1.2rem;
+}
+.matterfoot{
+    padding: 0.5rem;
+    font-size: 1.05rem;
+}
+
+/* footer end box*/
+#dfinal{
+    text-align: center;
+    margin: 0.5rem;
+}
+
+
+/*special properties*/
 a:hover{
-    border:0.1rem solid black;
     color:black;
     background-color: #cde3f0;
+    border: 0;
+    padding: 0;
 }
 a:active{
-    border:0.1rem solid black;
     color:black;
     background-color: white;
+    border: 0;
+    padding: 0;
 }
+
+/*media queries*/
 @media screen and (max-width: 800px) {
     #login {
         color: white;

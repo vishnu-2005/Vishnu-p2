@@ -1,25 +1,40 @@
+/*common elements*/
 html, body {
     margin: 0;
     padding: 0;
     height: 100%;
     width: 100%;
-
+    
 }
 a{
     color: black;
     text-decoration: none;
 }
 
-#login{
+/*header*/
+header{
     width: 100%;
-    height: 2rem;
-    margin: 0.3rem;
-    text-align: center;
+    height: 4rem;
+    position: absolute;
+    top:0;
     display: flex;
-    justify-content: center;
     align-items: center;
-    font-size: x-large;
+    justify-content: center;
+    background-color:#92b4f44f;
 }
+#heading{
+    color: black;
+    flex-grow:1;
+    flex-shrink:1;
+    font-size: 2rem;
+    text-align: center;
+    height: max-content;
+    width: 100%;
+    margin: 0;
+}
+
+
+/*main box*/
 #outer{
     width: 100%;
     height: 100%;
@@ -43,6 +58,20 @@ a{
     border-radius: 1rem;
     background-color: rgba(128, 128, 128, 0.8);
 }
+
+/*heading inside login div*/
+#login{
+    width: 100%;
+    height: 2rem;
+    margin: 0.3rem;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: x-large;
+}
+
+/*form inside longin div*/
 #innerform{
     width: 100%;
     display:flex;
@@ -72,11 +101,8 @@ a{
     font-size: 1.rem;
     margin: 1rem;
 }
-p{
-    margin: 0;
-    display: flex;
-    justify-content: space-around;
-}
+
+/*login button*/
 button{
     width: 90%;
     height: 1.8rem;
@@ -87,44 +113,25 @@ button{
     font-weight: 500;
 }
 button:active{
-    background-color: rgba(255, 255, 255, 0.8);
+    background-color: white;
+}
+button:hover{
+    background-color:rgba(255, 255, 255, 0.7);
+}
+
+/*last line in login box*/
+p{
+    margin: 0;
+    display: flex;
+    justify-content: space-around;
 }
 #Register:hover{
     text-decoration: underline;
     color: black;
 }
-header{
-    width: 100%;
-    height: 4rem;
-    position: absolute;
-    top:0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color:#92b4f44f;
-}
-#heading{
-    color: black;
-    flex-grow:1;
-    flex-shrink:1;
-    font-size: 2rem;
-    text-align: center;
-    height: max-content;
-    width: 100%;
-    margin: 0;
-}
 
 
-footer a:hover{
-    color:black;
-    background-color: rgba(255, 255, 255, 0.3);
-}
-footer a:active{
-    color:black;
-    background-color: white;
-}
-
-
+/*footer*/
 footer{
     background-color:#92b4f44f;
     height: 8vh;
@@ -150,4 +157,12 @@ footer{
     flex-grow: 1;
     flex-shrink: 1;
     flex-wrap: wrap;
+}
+footer a:hover{
+    color:black;
+    background-color: rgba(255, 255, 255, 0.3);
+}
+footer a:active{
+    color:black;
+    background-color: white;
 }
