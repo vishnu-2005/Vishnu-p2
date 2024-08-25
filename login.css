@@ -3,40 +3,11 @@ html, body {
     padding: 0;
     height: 100%;
     width: 100%;
-    background-color: rgba(230, 230, 250, 0.762);
-}
-header{
-    background-color: #92b4f4;
-    width: 100%;
-    height: 4rem;
-    position: absolute;
-    top:0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-#heading{
-    color:#0A369D;
-    flex-grow:1;
-    flex-shrink:1;
-    font-size: 2rem;
-    text-align: center;
-    height: max-content;
-    width: 100%;
-    margin: 0;
+
 }
 a{
     color: black;
     text-decoration: none;
-}
-a:hover{
-    color:black;
-    background-color: #cde3f0;
-    border: 1.5px solid black;
-}
-a:active{
-    color:black;
-    background-color: white;
 }
 
 #login{
@@ -50,24 +21,27 @@ a:active{
     font-size: x-large;
 }
 #outer{
-    background-color: rgba(230, 230, 250, 0.762);
     width: 100%;
-    height: 80vh;
+    height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
+    background-image: url(pexels-pixabay-261621.jpg);
+    background-size: cover;
 }
 #inner{
     width: 15rem;
     height: 15rem;
-    background-color: rgba(248, 248, 197, 0.574);
     padding: 0.5rem;
     border: 2px solid black;
-    position: relative;
-    top:7%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     display:flex;
     flex-wrap:wrap;
     border-radius: 1rem;
+    background-color: rgba(255, 255, 255, 0.3);
 }
 #innerform{
     width: 100%;
@@ -89,37 +63,67 @@ a:active{
     font-size: 0.8rem; 
     border-radius: 0.5rem;
     border: 0.05rem solid black;
+    background-color: rgba(255, 255, 255, 0.5);
 }
 
 #linked{
-    width: 98%;
+    width: 100%;
     text-align: center;
-    font-size: 0.8rem;
-    display: block;
+    font-size: 1.rem;
+    margin: 1rem;
 }
 p{
-    text-align: center;
-    font-size: small;
-    width: 100%;
     margin: 0;
+    display: flex;
+    justify-content: space-around;
 }
 button{
-    width: 40%;
+    width: 90%;
+    height: 2rem;
     font-size: 0.8rem;
     border-radius: 0.5rem;
     border: 0.05rem solid black;
+    background-color:rgba(255, 255, 255, 0.5);
 }
-button:hover{
-    background-color: gray;
-    color: white;
+#Register:hover{
+    text-decoration: underline;
+    color: black;
 }
-#Register{
-    height: 0.8rem;
-    border-radius: 0.5rem;
-    border: 0.05rem solid transparent;
+header{
+    width: 100%;
+    height: 4rem;
+    position: absolute;
+    top:0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color:rgba(255, 255, 255, 0.5);
 }
+#heading{
+    color: black;
+    flex-grow:1;
+    flex-shrink:1;
+    font-size: 2rem;
+    text-align: center;
+    height: max-content;
+    width: 100%;
+    margin: 0;
+}
+
+
+footer a:hover{
+    color:black;
+    background-color: rgba(255, 255, 255, 0.4);
+    border: 1.5px solid black;
+}
+footer a:active{
+    color:black;
+    background-color: white;
+}
+
+
 footer{
-    background-color: #92b4f4;
+    background-color:rgba(255, 255, 255, 0.5);
     height: 8vh;
     width: 100%;
     display: flex;
