@@ -20,10 +20,9 @@ header{
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color:#92b4f44f;
+    background-color:rgba(3, 3, 26, 0.5);
 }
 #heading{
-    color: black;
     flex-grow:1;
     flex-shrink:1;
     font-size: 2rem;
@@ -31,6 +30,7 @@ header{
     height: max-content;
     width: 100%;
     margin: 0;
+    color: white;
 }
 
 
@@ -56,7 +56,7 @@ header{
     display:flex;
     flex-wrap:wrap;
     border-radius: 1rem;
-    background-color: rgba(128, 128, 128, 0.8);
+    background-color: rgba(128, 128, 128,0.8);
 }
 
 /*heading inside login div*/
@@ -92,7 +92,7 @@ header{
     font-size: 0.8rem; 
     border-radius: 0.5rem;
     border: 0.05rem solid transparent;
-    background-color: rgba(255, 255, 255, 0.5);
+    background-color: white;
 }
 
 #linked{
@@ -109,11 +109,8 @@ button{
     font-size: 0.8rem;
     border-radius: 0.5rem;
     border: 0.05rem solid transparent;
-    background-color:rgba(255, 255, 255, 0.5);
+    background-color:white;
     font-weight: 500;
-}
-button:active{
-    background-color: white;
 }
 button:hover{
     background-color:rgba(255, 255, 255, 0.7);
@@ -136,7 +133,7 @@ p{
 
 /*footer*/
 footer{
-    background-color:#92b4f44f;
+    background-color:rgba(3, 3, 26, 0.5);
     height: 8vh;
     width: 100%;
     display: flex;
@@ -148,11 +145,11 @@ footer{
 }
 .footer{
     text-decoration: none;
-    color: black;
     width:max-content;
     height: max-content;
-    font-size: 1rem;
+    font-size: 1.05rem;
     padding: 0.3rem;
+    color: white;
 }
 .last footer{
     width: 20%;
@@ -168,4 +165,11 @@ footer a:hover{
 footer a:active{
     color:black;
     background-color: white;
+}
+
+@media screen and (max-width: 1000px){
+    #outer{
+        background-image: url("pexels-pixabay-2616211.jpg");
+        background-size: cover ;
+    }
 }
