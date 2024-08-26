@@ -68,7 +68,7 @@ header{
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: x-large;
+    font-size: medium;
 }
 
 /*form inside longin div*/
