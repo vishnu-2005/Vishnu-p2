@@ -287,4 +287,17 @@ li{
     #matter1{
         width: 100vw;
     }
+    #video {
+        width: 100vw;
+        z-index: 1;
+        opacity: 0.6;
+        margin: 0;
+        display: flex;
+        justify-content: center;
+        object-fit: cover;
+    }
+    #video video{
+        width: 100%;
+        height: max-content;
+    }
 }
