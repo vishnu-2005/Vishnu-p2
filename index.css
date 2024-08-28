@@ -54,7 +54,6 @@ header{
 #video {
     width: 100vw;
     z-index: 1;
-    object-fit: cover;
     opacity: 0.6;
     margin: 0;
     display: flex;
@@ -62,6 +61,8 @@ header{
 }
 #video video{
     width: 100vw;
+    height: 80vh;
+    object-fit: cover;
 }
 #videoheading {
     position: absolute;
